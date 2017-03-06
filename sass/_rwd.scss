@@ -1,0 +1,192 @@
+@import 'bootstrap-mixins';
+
+
+.navbar {
+	.navbar-toggle {
+		.icon-bar {
+			@include respondto (xs, sm, md) {
+				background: white !important;
+			}
+		}
+	}
+}
+
+.nav-bsc {
+	@include respondto(xs, sm) {
+		height: 110px !important;
+	}
+}
+
+
+.navbar-collapse {
+	@include respondto(xs, sm) {
+		background: $black !important;
+		z-index: 99999;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		width: 400px;
+		padding-left: 20px;
+	}
+	li a {
+		@include respondto(xs, sm) {
+			margin-left: 30px;
+		}
+	}
+}
+
+.logo-web {
+	@include respondto(xs, sm) {
+		height: 80px !important;
+	}
+}
+
+.navbar-toggle {
+	@include respondto(xs, sm) {
+		margin-top: 35px !important;
+	}
+}
+
+#service {
+	@extend #member;
+	.header {
+		.pricing-illustration {
+			display: inline-block;
+			margin-bottom: 30px !important;
+		}
+	}
+	.form-user {
+		margin-bottom: 50px;
+		.option {
+			margin-bottom: 50px;
+		}
+		.action {
+			.btn-prm {
+				@include respondto(xs) {
+					.btn-perm {
+						margin-right: -250px !important;
+					}
+				}				
+			}
+		}
+	}
+}
+
+#about {
+	.partner {
+		@include respondto(xs) {
+		padding-top: 60px !important;
+	}
+		.item {
+			@include respondto(xs) {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.contact {
+		@include respondto(xs) {
+			margin-bottom: -50px;
+		}
+		.maps {
+			@include respondto(xs) {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+.whatwedo {
+	.do {
+		@include respondto(xs) {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.about {
+	img {
+		@include respondto(xs) {
+			display: none !important;
+		}
+	}
+}
+
+.footer {
+	.info {
+		@include respondto(xs) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
+.copyright {
+	.date {
+		@include respondto(xs) {
+			margin-left: 40px;
+		}
+	}
+	.sosmed {
+		@include respondto(xs) {
+			margin-right: 120px;
+		}
+	}
+}
+
+.downloadapp {
+	@include respondto(xs) {
+		margin-top: -50px !important;
+	}
+	.caption {
+		@include respondto(xs) {
+			margin-top: -220px !important;
+		}
+		.btn-register {
+			@include respondto(xs) {
+				float: right !important;
+			}
+		}
+	}
+}
+
+.ourblog {
+	@include respondto(xs) {
+		margin-bottom: -80px;
+	}
+	.artikel {
+		@include respondto(xs) {
+			margin-bottom: 30px !important;
+		}
+	}
+}
+
+.whyshould {
+	.reasons {
+		@include respondto(xs) {
+			margin-top: -10px !important;
+		}
+	}
+	.images {
+		img {
+			@include respondto(xs) {
+				display: none !important;
+			}
+		}
+	}
+}
+
+.testi {
+	@include respondto(xs) {
+		margin-top: -50px !important;
+	}
+	.item {
+		@include respondto(xs) {
+			margin-bottom: 80px !important;
+		}
+		.foto {
+			@include respondto(xs) {
+				top: -40px !important;
+			}
+		}
+	}
+}
