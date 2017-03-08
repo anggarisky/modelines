@@ -18,3 +18,17 @@ $(document).ready(function(){
 	  
 	});
 });
+
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 50px
+        $('#back-top').fadeIn(500);    // Fade in the arrow
+    } else {
+        $('#back-top').fadeOut(500);   // Else fade out the arrow
+    }
+});
+$('#back-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
